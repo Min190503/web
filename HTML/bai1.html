@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .card {
+  width: 200px;
+  border: 1px solid black;
+  padding: 20px;
+  border-radius: 10px;
+  font-family: sans-serif;
+  margin: 5px
+}
+
+.name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.age {
+  font-size: 14px;
+  font-style: italic;
+}
+  </style>
+</head>
+<body>
+  <div id="app">
+    <div class="card">
+      <div class="name">Name: Alice</div>
+      <div class="age">Age: 20</div>
+    </div>
+    <div class="card">
+      <div class="name">Name: Bob</div>
+      <div class="age">Age: 20</div>
+    </div>
+    <div class="card">
+      <div class="name">Name: Cris</div>
+      <div class="age">Age: 20</div>
+    </div>
+  </div>
+  <script>
+    function NameCard(props) {
+  return (
+    <div className="card">
+      <div className="name">Name: {props.name}</div>
+      <div className="age">Age: {props.age}</div>
+    </div>
+  )
+}
+
+ReactDOM.render(<div>
+  <NameCard name="Alice" age="20" />
+  <NameCard name="Bob" age="20" />
+  <NameCard name="Cris" age="20" />
+</div>, document.getElementById("app"))
+  </script>
+</body>
+</html>
+<script>
+
+        import React from "react";
+
+        export default function Avatar() {
+            const avatar = "https://wwwhttps://www.bntb=1.google.com/?hl=vi.jpg";
+            return <img className="avatar" src={avatar} />;
+        }
+
+</script>
+
+
+import React from "react";
+
+export default function Avatar() {
+  return (
+    <img
+      className="avatar"
+      src="https://i.imgur.com/7vQD0fPs.jpg"
+      alt="Gregorio Y. Zara"
+    />
+  );
+}
