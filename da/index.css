@@ -113,13 +113,22 @@ nav  li:hover > ul{
     border-radius: 25px;
     text-align: center;
     font-size: 20px;
-    margin-left: 15%;
+    margin-left: 30%;
     margin-top: 7%;
     background-color: #4CB050;
 }
 
-.test{
-    width: 1000px;
-    height: 10000px;
-    background-color: #4CB050;
+
+.bd1{
+   height: auto;
+   margin-left: 5%;
+   object-fit: fill;
+}
+.bd_bt1{
+    float: right;
+    width: 30%;
+    height: 2%;
+    text-align: center;
+    font-size: 30px;
+
 }
