@@ -7,7 +7,6 @@
 nav{
     
     background: #ffffff; 
-    border-radius: 5px; 
     position: fixed; /* Menu cố định */
     width: 100%;
     top: 0; /* Đặt menu ở phía trên cùng */
@@ -118,17 +117,21 @@ nav  li:hover > ul{
     background-color: #4CB050;
 }
 
-
-.bd1{
-   height: auto;
-   margin-left: 5%;
-   object-fit: fill;
+.btn_bd{
+   margin-top: 20%;
+   
 }
-.bd_bt1{
-    float: right;
-    width: 30%;
-    height: 2%;
-    text-align: center;
+.btn1_bd{
+    width: 100%;
+    height: auto;
     font-size: 30px;
-
+    text-align: center;
+    
+}
+.btn2_bd{
+    width: 100%;
+    height: auto;
+    font-size: 27px;
+    text-align: center;
+    background-color: #4CB050;
 }
