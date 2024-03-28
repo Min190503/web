@@ -135,3 +135,42 @@ nav  li:hover > ul{
     text-align: center;
     background-color: #4CB050;
 }
+
+/*    page3     */
+.textpage3{
+    margin-top: 8%;
+}
+.textpage3>h1{
+    text-align: center;
+}
+.textpage3>h2{
+    text-align: center;
+    color: #B3B3B3;
+}
+
+.imgpage3{
+    size: 200px;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    
+}
+.hinh{
+    position: relative;
+}
+.gt{
+    width: 100%;
+    position: absolute;
+    transform: translate(10%, -150%);
+    z-index: 1; /* Đảm bảo textbanner hiển thị phía trên imgbanner */
+    color: white;
+}
+.btn_gt{
+    width: 50%;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    background-color: #4CB050;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Bóng mờ */
+}
