@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <title>Responsive Navbar</title>
+</head>
+ 
+<body>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+     
+    ul {
+        list-style-type: none;
+    }
+     
+    nav {
+        background-color: #273c75;
+    }
+     
+    #main-menu {
+        display: flex;
+    }
+     
+    nav #main-menu li a {
+        color: #fff;
+        text-decoration: none;
+        display: block;
+        padding: 8px 15px;
+    }
+     
+    nav #main-menu li:hover a {
+        background: #c23616;
+        transition: all 0.3s;
+    }
+     
+    #toggle {
+        display: none;
+        background: #353b48;
+        color: #fff;
+        text-align: right;
+        padding: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+     
+    @media screen and (max-width: 768px) {
+        #main-menu {
+            flex-direction: column;
+            text-align: center;
+        }
+        #toggle {
+            display: block;
+        }
+        nav {
+            display: none;
+        }
+    }
+</style>
+    <script>
+        $(document).ready(function() {
+            $('#toggle').click(function() {
+                $('nav').slideToggle();
+            });
+        })
+    </script>
+    <div id="wrapper">
+        <div id="header">
+            <div id="toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav>
+                <ul id="main-menu">
+                    <li>
+                        <a href="">Trang chủ</a>
+                    </li>
+                    <li>
+                        <a href="">Giới thiệu</a>
+                    </li>
+                    <li>
+                        <a href="">Sản phẩm</a>
+                    </li>
+                    <li>
+                        <a href="">Dịch Vụ</a>
+                    </li>
+                    <li>
+                        <a href="">Blog</a>
+                    </li>
+                    <li>
+                        <a href="">Liên hệ</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+ 
+</body>
+ 
+</html>

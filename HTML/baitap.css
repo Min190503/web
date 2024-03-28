@@ -1,0 +1,120 @@
+.khung{
+    width:960px; margin:0px auto ;
+    overflow:  hidden;
+   
+}
+
+.header{
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.banner{
+    padding: 0px 10px;
+}
+
+.DM{
+    background-color: white; width: 240px; float: left;
+
+    
+}
+.DM h2{
+    margin: 5px 0;
+    
+}
+
+.DM h5{
+    margin: 12px 30px;
+    text-align: 10px right;
+        
+}
+
+.sp{
+    background-color: white; width: 720px; float: left;
+}
+
+.footer{
+    margin-top: 1010px;
+    width: 960px;
+    background-color: rgba(39, 37, 37, 0.897) ; 
+    padding-bottom: 0px;
+    
+}   
+
+
+
+
+.spp{
+    width: 240px; float: left; padding-top: 40px
+}
+
+.spp2{
+    margin-top: 20px;
+    width: 240px; float: left; padding-top: 34px  
+    
+}
+
+.spp2 p{
+    margin-right: 10px;
+}
+
+nav {
+    float: left ;
+    padding-left: 230px;
+    margin-bottom: 20px;
+}
+
+ul{
+    list-style: none;
+}
+nav ul li{
+    float: left ;
+    padding: 10px 17px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: gray;
+    font-size: 20px;
+    text-transform: uppercase;
+
+}
+
+nav ul li{
+    border-bottom: 3px solid gray;
+}
+
+nav ul li:hover{
+    border-bottom: 3px solid black;
+}
+
+nav ul li:hover a{
+    color: red;
+}
+
+.logoo{
+    width: 50px; float: left; 
+}
+
+.chitiet{
+    padding: 8px 15px;
+    margin-right: 20px;
+    float: right;
+    background-color: red;
+    border-color: red ;
+    color: white;
+}
+.logoo2{
+    width:140px;
+    float: right;
+    margin-top: 0px;
+    
+}
+
+.info {
+    margin-top: 0px;
+    width: 300px;
+    color: white;;
+ }
+
+ 
