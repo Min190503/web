@@ -1,0 +1,41 @@
+
+import pygame
+import sys
+
+pygame.init()
+
+
+WIDTH, HEIGHT = 480, 480
+ROWS, COLS = 8, 8
+SQUARE_SIZE = HEIGHT // ROWS
+
+# Colors
+WHITE = (255, 255, 255)
+BLACK = (0, 0, 0)
+
+# Screen
+screen = pygame.display.set_mode((WIDTH, HEIGHT))
+pygame.display.set_caption('Chess')
+
+
+def draw_board():
+    for row in range(ROWS):
+        for col in range(row % 2, COLS, 2):
+            pygame.draw.rect(screen, WHITE, (col * SQUARE_SIZE, row * SQUARE_SIZE, SQUARE_SIZE, SQUARE_SIZE))
+
+def main():
+    running = True
+    while running:
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                running = False
+
+        screen.fill(BLACK)
+        draw_board()
+        pygame.display.flip()
+
+    pygame.quit()
+    sys.exit()
+
+if __name__ == "__main__":
+    main()
