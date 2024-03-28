@@ -1,1 +1,0 @@
-if sinh_vien >= 1 and sinh_vien <= 5:
