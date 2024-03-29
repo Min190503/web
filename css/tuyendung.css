@@ -1,6 +1,7 @@
 
 .banner_tuyendung{
     margin-top: 5%;
+    padding: 0px;
     position: relative;
    
 }
@@ -87,4 +88,8 @@
     font-size: 20px; 
     border-radius: 20px;
     margin-left: 20%;
+}
+.cvh:hover {
+    border-color: #4CB050;
+    box-shadow: 0 0 5px #4CB050;
 }
