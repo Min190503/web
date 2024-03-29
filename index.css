@@ -214,3 +214,53 @@ nav  li:hover > ul{
 .thongtin3{
     margin-top: 4%;
 }
+
+/* footer*/
+.footer{
+    background-color: #252525;
+    height: 700px;
+}
+.lhvct1>h1{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 4%;
+}
+.lhvct{
+    display: flex;
+    margin-top: 5%;
+    margin: auto;
+    height: 150px;
+    border: 1px solid white;
+    align-items: center;    
+}
+.lhvct2>button{
+    float: right;
+    font-size: 25px;
+    margin-right: 5%;
+    background-color: #4CB050;
+    text-align: center;
+    color: white;
+    border-radius: 25px;
+    width: 50%;
+    height: 50px;
+    font-weight: 800;
+}
+.tx_footer{
+    color: white;
+    margin-left: 10%;
+}
+.cskh{
+    margin: 0 auto;
+    color: white;
+}
+.cskh1{
+    width: 70%;
+    margin: 0 30%;
+}
+.cskh2{
+    width: 70%;
+    margin: 10% 30% 0 30%
+}
+.email{
+    margin-top: 4%;
+}
