@@ -1,0 +1,41 @@
+.A{
+    background-color: #4CB050;
+    height: 700px;
+    position: relative;
+}
+.cptc>h1{
+    color: #4CB050;
+    margin-top: 20%;
+    margin-left: 20%;
+}
+.cptc>p{
+    margin-left: 21%;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+}
+.btn1{
+    background-color: #4CB050;
+    color: white;
+    width: 35%;
+    height: 50px;
+    text-align: center;
+    float: right;
+}
+.btn2{
+    border-color: #4CB050;
+    background-color: white;
+    color: #4CB050;
+    width: 30%;
+    height: 50px;
+    text-align: center;
+}
+.hinh_dv{
+    position: absolute;
+    transform: translate(-330%, 70%);
+    z-index: 1;
+    width: 25%;
+    border: 2px solid #ccc;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+
+}
