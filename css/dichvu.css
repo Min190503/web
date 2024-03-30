@@ -1,12 +1,28 @@
 .A{
-    background-color: #4CB050;
-    height: 700px;
+    height: 800px;
     position: relative;
+}
+.banner_dv{
+    position: relative;
+    width:100%;
+}
+.text_bannerdv{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: white;
+    text-align: center;
 }
 .cptc>h1{
     color: #4CB050;
     margin-top: 20%;
     margin-left: 20%;
+}
+.cptc{
+    
+    opacity: 0.8;
 }
 .cptc>p{
     margin-left: 21%;
@@ -23,19 +39,42 @@
     float: right;
 }
 .btn2{
-    border-color: #4CB050;
+    border-color: black;
     background-color: white;
-    color: #4CB050;
+    color: black;
     width: 30%;
     height: 50px;
     text-align: center;
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;   
 }
 .hinh_dv{
     position: absolute;
-    transform: translate(-330%, 70%);
+    transform: translate(-330%, 55%);
     z-index: 1;
     width: 25%;
+    height: 45%;
     border: 2px solid #ccc;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 
+}
+
+.btn2::before{
+    content: "";
+    position: absolute;
+    left: auto;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 0;
+    background-color: #4CB050;
+    z-index: -1;
+    transition: 0.4s;
+    
+}
+.btn2:hover::before{
+    left: 0;
+    right: auto;
+    width: 100%;
 }
