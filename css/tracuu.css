@@ -107,4 +107,6 @@ table, th, td{
 .table2{
     margin-top: 5%;
     margin-bottom: 10%;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
