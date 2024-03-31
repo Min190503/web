@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/index.css">
     <link rel="stylesheet" href="/css/bootstrap.css">
-    <link rel="stylesheet" href="/css/tuyendung.css">
+    <link rel="stylesheet" href="/css/tracuu.css">
+    <script src="/js/tracuu.js"></script>
 
 </head>
 <body> 
@@ -34,7 +35,356 @@
                 </ul>
             </nav>
         </div>
-        
+        <div>
+            <img class="hinhtracuu" src="/ing/tracuu.gif" style="width: 100%; margin-top: 4%; ">
+        </div>
+        <div class="row">
+            <div class="col-lg-10 tracuu" >
+                <div class="row">
+                    <div class="col-lg-3 btncl">
+                        <button onclick="openTab('tab1')">Cước vận chuyển</button>
+                    </div>
+                    <div class="col-lg-3 btncl">
+                        <button onclick="openTab('tab2')">Vận đơn</button>
+                    </div>
+                    <div class="col-lg-3 btncl">
+                        <button onclick="openTab('tab3')">Bưu cục </button>
+                    </div>
+                    <div class="col-lg-3 btncl">
+                        <button onclick="openTab('tab4')">Bảng giá</button>
+                    </div>
+                </div>
+                
+                <div id="tab1" class="tabcontent">
+                    <div class="row guitu">
+                        <div class="col-lg-12"><h4>Gửi từ</h4></div>
+                        <div class="col-lg-4">
+                            <h5>Tỉnh/Thành phố</h5>
+                            <select class="btn">
+                                <option Value="">Tỉnh/Thành phố</option>
+                                <option Value="">Tp.Hồ Chí Minh</option>
+                                <option Value="">Hà Nội</option>
+                                <option Value="">Đà Nẵng</option>
+                                <option Value="">Nha Trang</option>
+                                <option Value="">Bình Dương</option>
+                                <option Value="">Đà Lạt </option>
+                                <option Value="">Ninh Thuận </option>
+                                <option Value="">Bình Thuận </option>
+                                <option Value="">Phú Yên </option>
+                                <option Value="">Yên Bái </option>
+                              </select> 
+                        </div>
+                        <div class="col-lg-4">
+                            <h5>Quận/Huyện</h5>
+                            <select class="btn">
+                                <option Value="">Quận/Huyện </option>
+                                <option Value="">Tp.Hồ Chí Minh</option>
+                                <option Value="">Hà Nội</option>
+                                <option Value="">Đà Nẵng</option>
+                                <option Value="">Nha Trang</option>
+                                <option Value="">Bình Dương</option>
+                                <option Value="">Đà Lạt </option>
+                                <option Value="">Ninh Thuận </option>
+                                <option Value="">Bình Thuận </option>
+                                <option Value="">Phú Yên </option>
+                                <option Value="">Yên Bái </option>
+                              </select> 
+                        </div>
+                        <div class="col-lg-4">
+                            <h5>Phường/Xã</h5>
+                            <select class="btn">
+                                <option Value="">Phường/Xã </option>
+                                <option Value="">Tp.Hồ Chí Minh</option>
+                                <option Value="">Hà Nội</option>
+                                <option Value="">Đà Nẵng</option>
+                                <option Value="">Nha Trang</option>
+                                <option Value="">Bình Dương</option>
+                                <option Value="">Đà Lạt </option>
+                                <option Value="">Ninh Thuận </option>
+                                <option Value="">Bình Thuận </option>
+                                <option Value="">Phú Yên </option>
+                                <option Value="">Yên Bái </option>
+                              </select> 
+                        </div>
+                    </div>
+                    <div class="row guiden">
+                        <div class="col-lg-12">  <h4>Gửi đến</h4></div>
+                        <div class="col-lg-4">
+                            <h5>Tỉnh/Thành phố</h5>
+                            <select class="btn">
+                                <option Value="">Tỉnh/Thành phố </option>
+                                <option Value="">Tp.Hồ Chí Minh</option>
+                                <option Value="">Hà Nội</option>
+                                <option Value="">Đà Nẵng</option>
+                                <option Value="">Nha Trang</option>
+                                <option Value="">Bình Dương</option>
+                                <option Value="">Đà Lạt </option>
+                                <option Value="">Ninh Thuận </option>
+                                <option Value="">Bình Thuận </option>
+                                <option Value="">Phú Yên </option>
+                                <option Value="">Yên Bái </option>
+                              </select> 
+                        </div>
+                        <div class="col-lg-4">
+                            <h5>Quận/Huyện</h5>
+                            <select class="btn">
+                                <option Value="">Quận/Huyện </option>
+                                <option Value="">Tp.Hồ Chí Minh</option>
+                                <option Value="">Hà Nội</option>
+                                <option Value="">Đà Nẵng</option>
+                                <option Value="">Nha Trang</option>
+                                <option Value="">Bình Dương</option>
+                                <option Value="">Đà Lạt </option>
+                                <option Value="">Ninh Thuận </option>
+                                <option Value="">Bình Thuận </option>
+                                <option Value="">Phú Yên </option>
+                                <option Value="">Yên Bái </option>
+                              </select> 
+                        </div>
+                        <div class="col-lg-4">
+                            <h5>Phường/Xã</h5>
+                            <select class="btn">
+                                <option Value="">Phường/Xã </option>
+                                <option Value="">Tp.Hồ Chí Minh</option>
+                                <option Value="">Hà Nội</option>
+                                <option Value="">Đà Nẵng</option>
+                                <option Value="">Nha Trang</option>
+                                <option Value="">Bình Dương</option>
+                                <option Value="">Đà Lạt </option>
+                                <option Value="">Ninh Thuận </option>
+                                <option Value="">Bình Thuận </option>
+                                <option Value="">Phú Yên </option>
+                                <option Value="">Yên Bái </option>
+                              </select> 
+                        </div>
+                    </div>
+                    <div class="row guiden">
+                        <div class="col-lg-12">  <h4>Weight</h4></div>
+                        <div class="btnweight">
+                            <input type="text" class="form-control weight" placeholder="KG" id="weight" name="weight">
+                        </div>
+                    </div>
+                    <div class="row " style="margin-bottom: 5%;">
+                        <div class="col-lg-12 btntracuu">
+                            <button><h5>Tra cứu cước vận chuyển</h5></button>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div id="tab2" class="tabcontent">
+                    <div class="madon">
+                        <input type="text" class="form-control" placeholder="Ví dụ:19052003" id="madon" name="madon">  
+                    </div>
+                    <div style=" width: 93%;margin: 3% auto;">
+                        <h5>Nhập mã đơn của bạn</h5>
+                    </div>
+                    <div class="row " style="margin-bottom: 5%;">
+                        <div class="col-lg-12 btntracuu">
+                            <button><h5>Tra cứu đơn </h5></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="tab3" class="tabcontent">
+                    <div class="row buucuc">
+                        <div class="col-lg-4">
+                            <h5>Tỉnh/Thành phố</h5>
+                            <select class="btn">
+                                <option Value="">Tỉnh/Thành phố </option>
+                                <option Value="">Tp.Hồ Chí Minh</option>
+                                <option Value="">Hà Nội</option>
+                                <option Value="">Đà Nẵng</option>
+                                <option Value="">Nha Trang</option>
+                                <option Value="">Bình Dương</option>
+                                <option Value="">Đà Lạt </option>
+                                <option Value="">Ninh Thuận </option>
+                                <option Value="">Bình Thuận </option>
+                                <option Value="">Phú Yên </option>
+                                <option Value="">Yên Bái </option>
+                              </select> 
+                        </div>
+                        <div class="col-lg-4">
+                            <h5>Quận/Huyện</h5>
+                            <select class="btn">
+                                <option Value="">Quận/Huyện </option>
+                                <option Value="">Tp.Hồ Chí Minh</option>
+                                <option Value="">Hà Nội</option>
+                                <option Value="">Đà Nẵng</option>
+                                <option Value="">Nha Trang</option>
+                                <option Value="">Bình Dương</option>
+                                <option Value="">Đà Lạt </option>
+                                <option Value="">Ninh Thuận </option>
+                                <option Value="">Bình Thuận </option>
+                                <option Value="">Phú Yên </option>
+                                <option Value="">Yên Bái </option>
+                              </select> 
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="tkbc">
+                            <button><h5>Tìm kiếm bưu cục</h5></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="tab4" class="tabcontent">
+                    <div class="table1">
+                        <div class="col-lg-12" style="text-align: center;">
+                            <h3>Cước vận chuyển tiêu chuẩn</h3>
+                        </div>
+                        <table class="col-lg-12" style="width: 100%;">
+                            <tr>
+                                <td rowspan="2">Khối lượng</td>
+                                <td colspan="4">Vùng phát bưu gửi</td>
+                            </tr>
+                            <tr>
+                                <td>Nội tỉnh</td>
+                                <td><100Km</td>
+                                <td>100-300Km</td>
+                                <td>>300Km</td>
+                            </tr>
+                            <tr>
+                                <td>0.50</td>
+                                <td>17,700</td>
+                                <td>22,500</td>
+                                <td>24,000</td>
+                                <td>25,000</td>
+                            </tr>
+                            <tr>
+                                <td>1.00</td>
+                                <td>17,700</td>
+                                <td>24,500</td>
+                                <td>28,000</td>
+                                <td>29,000</td>
+                            </tr>
+                            <tr>
+                                <td>1.50</td>
+                                <td>17,700</td>
+                                <td> 26,600</td>
+                                <td>32,000</td>
+                                <td>33,000</td>
+                            </tr>
+                            <tr>
+                                <td>2.00</td>
+                                <td> 17,700</td>
+                                <td> 28,600</td>
+                                <td>36,000</td>
+                                <td> 37,000</td>
+                            </tr>
+                            <tr>
+                                <td>Mỗi 0.5 kg tiếp theo</td>
+                                <td>2,500</td>
+                                <td> 2,500</td>
+                                <td>4,500</td>
+                                <td>4,500</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="table2">
+                        <div class="col-lg-12" style="text-align: center;">
+                            <h3>Cước vận chuyển nhanh</h3>
+                        </div>
+                        <table class="col-lg-12" style="width: 100%;">
+                            <tr>
+                                <td rowspan="2">Khối lượng</td>
+                                <td colspan="4">Vùng phát bưu gửi</td>
+                            </tr>
+                            <tr>
+                                <td>Nội tỉnh</td>
+                                <td><100Km</td>
+                                <td>100-300Km</td>
+                                <td>>300Km</td>
+                            </tr>
+                            <tr>
+                                <td>0.50</td>
+                                <td>21,900</td>
+                                <td>24,080</td>
+                                <td>28,800</td>
+                                <td>35,880</td>
+                            </tr>
+                            <tr>
+                                <td>1.00</td>
+                                <td>23,120</td>
+                                <td>27,600</td>
+                                <td>33,120</td>
+                                <td>40,920</td>
+                            </tr>
+                            <tr>
+                                <td>1.50</td>
+                                <td>26,800</td>
+                                <td>32,880</td>
+                                <td>39,360</td>
+                                <td>53,920</td>
+                            </tr>
+                            <tr>
+                                <td>2.00</td>
+                                <td> 30,000</td>
+                                <td> 36,320</td>
+                                <td>44,080</td>
+                                <td> 72,640</td>
+                            </tr>
+                            <tr>
+                                <td>Mỗi 0.5 kg tiếp theo</td>
+                                <td>7,400</td>
+                                <td> 9,400</td>
+                                <td>10,900</td>
+                                <td>14,100</td>
+                            </tr>
+                        </table>
+                        <div class="table2">
+                            <div class="col-lg-12" style="text-align: center;">
+                                <h3>Cước vận chuyển quốc tế</h3>
+                            </div>
+                            <div class="col-lg-12 " style="margin-left: 18%;">
+                                <img src="/ing/banggia.jpg" style="width: 65%; ;"  alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+        </div>
+        <div class="row footer " >
+            <div class="col-lg-11 lhvct ">
+                <div class="col-lg-6 lhvct1">
+                  <h1 >Liên hệ với chúng tôi</h1>
+                </div>
+                <div class="col-lg-6 lhvct2" >
+                    <button>Liên hệ</button>
+                </div>
+            </div>
+            <div class="col-lg-11">
+              <div class="row">
+                <div class="col-lg-6">
+                 <div class="tx_footer">
+                    <h1>About Us</h1> <br>
+                    <p>Bất kỳ ai ở bất kỳ đâu, không phân biệt thành phần <br>
+                        hay độ tuổi, thành phố hay nông thôn, phổ thông <br>
+                        hay đại học; chỉ với một chiếc điện thoại thông minh <br> 
+                        ở trên tay có thể tham gia kinh doanh trực tuyến, <br>
+                        tham gia vào nền kinh tế số, để nuôi ước mơ tự <br>
+                        doanh tự lập đổi đời, góp phần thúc đẩy phát triển 
+                        kinh tế, xã hội tốt đẹp hơn.</p>
+                  </div> 
+                </div>
+                <div class="col-lg-6 cskh" >
+                  <div class="cskh">
+                  <div class="cskh1">
+                    <h1 >Chăm sóc khách hàng</h1>
+                    <hr width="25%" size="7px" color="#4CB050" style="margin: 1%;"/>
+                    <h1>099-321-1213</h1>
+                  </div>
+                  <div class="cskh2">
+                    <h1>Thư góp ý</h1>
+                    <hr width="25%" size="1px" color="#4CB050" style="margin: 1%;" />
+                    <input type="text" class="form-control email" placeholder="Your Email" id="mail" name="email">
+
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
 </div>
 
 
