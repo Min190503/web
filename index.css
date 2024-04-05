@@ -313,7 +313,11 @@ nav ul li a:focus {
         nav ul>li{
             border: none;
             border-bottom: 1px solid #ccc;
-            margin-top: 15px;
+            margin-top: 30px;
+        }
+        .logo2{
+            margin-left: 25%;
+            width: 30%;
         }
         .icon{
             border-bottom: none;
@@ -413,7 +417,6 @@ nav ul li a:focus {
             font-size: 30px;
         }
         .clbn{
-            margin-top: 10%;
             background-color: #EFEFEF;
             height: 600px;
         }
