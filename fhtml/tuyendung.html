@@ -6,11 +6,16 @@
     <link rel="stylesheet" href="/index.css">
     <link rel="stylesheet" href="/css/bootstrap.css">
     <link rel="stylesheet" href="/css/tuyendung.css">
-
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="/index.js"></script>
 </head>
 <body> 
   <div class="container-fluid" style="margin: 0; padding: 0;">
         <div>
+            <div id="toggle">
+                <img src="/ing/menu.svg" alt="">
+                <img class="logo2" src="/ing/logo.png">
+            </div>
   	        <nav>
                 <img class="logo" src="/ing/logo.png">
                 <ul id="main-menu">
@@ -35,15 +40,15 @@
             </nav>
         </div>
         <div class="col-lg-12 banner_tuyendung">
-            <img src="/ing/tuyendung3.gif" style="width: 100%; ">
+            <img class="bn_td" src="/ing/tuyendung3.gif" style="width: 100%; ">
         </div>
-        <div class="col-lg-11 tuyendung">
+        <div class="col-lg-11 col-sm-11 tuyendung">
             <div class="row">
-                <div class="col-lg-4 tt_tuyendung">
+                <div class="col-lg-4 col-sm-4 tt_tuyendung">
                     <h4>vị trí ứng tuyển</h4>
                     <input type="text" class="form-control ungtuyen" placeholder="Nhập vị trị ứng tuyển" id="mail" name="email">
                 </div>
-                <div class="col-lg-2 tt_tuyendung">
+                <div class="col-lg-2 col-sm-2 tt_tuyendung">
                     <h4>Địa điểm làm việc</h4>
                     <select class="thongtin">
                         <option Value="">Chọn tỉnh thành </option>
@@ -59,7 +64,7 @@
                         <option Value="">Yên Bái </option>
                       </select>
                 </div>
-                <div class="col-lg-2 tt_tuyendung">
+                <div class="col-lg-2 col-sm-2 tt_tuyendung">
                     <h4>Ngành nghề</h4>
                     <select class="thongtin">
                         <option>Ngành nghề</option>
@@ -71,7 +76,7 @@
                         <option>Vận hành</option>
                     </select>
                 </div>
-                <div class="col-lg-2 tt_tuyendung">
+                <div class="col-lg-2 col-sm-2 tt_tuyendung">
                     <h4>Chức vụ</h4>
                     <select class="thongtin">
                         <option>Chức vụ</option>
@@ -81,7 +86,7 @@
                         <option>Trưởng phòng</option>
                     </select>
                 </div>
-                <div class="col-lg-2 tt_tuyendung">
+                <div class="col-lg-2 col-sm-2 tt_tuyendung">
                     <button><img src="/ing/search.svg" alt="">Tìm kiếm</button>
                 </div>
             </div>
@@ -90,10 +95,10 @@
             <h1>Gia nhập cùng Mintin</h1>
         </div>
         <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-6 col-xs-6">
                 <div class="row">
-                    <div class="col-lg-6 vlnb"> <h1>Việc làm nổi bật</h1> </div>
-                    <div class="col-lg-6 btn_hot"> <button>hot</button> </div>
+                    <div class="col-lg-6 col-xs-6 vlnb"> <h1>Việc làm nổi bật</h1> </div>
+                    <div class="col-lg-6 col-xs-6 btn_hot"> <button>hot</button> </div>
                 </div>
                 <div class="cvh">
                     <h4>Nhân viên điều phối xe</h4>
@@ -111,7 +116,7 @@
                     <p style="color: red;">> XEM CHI TIẾT</p>
                 </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 col-sm-6">
                 <div class="row">
                     <div class="col-lg-6 vlm"> <h1>Việc làm mới</h1> </div>
                 </div>

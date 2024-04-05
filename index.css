@@ -385,6 +385,9 @@ input[type="text"] {
         ul{
             display: none;
         }
+        nav{
+            display: none;
+        }
         
         #toggle {
             display: block; 
@@ -539,7 +542,7 @@ input[type="text"] {
         }
         .lhvct1>h1{
             color: white;
-            font-size: 10px;
+            font-size: 15px;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin-left: 4%;
         }
@@ -553,15 +556,8 @@ input[type="text"] {
         }
         .lhvct2>button{
             float: right;
-            font-size: 10px;
-            margin-right: 5%;
-            background-color: #4CB050;
-            text-align: center;
-            color: white;
-            border-radius: 25px;
-            width: 50%;
-            height: 50px;
-            font-weight: 800;
+            width: 90%;
+            font-size: 20px;
         }
         .tx_footer{
             text-align: center;
@@ -596,5 +592,8 @@ input[type="text"] {
         }
         .email{
             margin: 5% auto;
+        }
+        .hd_page4{
+            font-size: 30px;   
         }
     }
