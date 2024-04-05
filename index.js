@@ -1,3 +1,5 @@
-const { json } = require("stream/consumers");
-
-json
+$(document).ready(function() {
+    $('#toggle').click(function() {
+        $('nav').slideToggle();
+    });
+})

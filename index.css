@@ -5,7 +5,7 @@
     padding: 0;
 }
 nav{
-    
+
     background: #ffffff; 
     position: fixed; /* Menu cố định */
     width: 100%;
@@ -33,7 +33,6 @@ nav> ul li{
 }
 nav> ul li a{
     
-    display: block;
     padding: 0 25px;
     line-height: 50px;
     color: black;
@@ -65,13 +64,22 @@ nav  li:hover > ul{
     display:  block;
     text-decoration: none;
 }
+nav ul ul {
+    display: none;
+}
 
+/* Hiển thị menu con của dịch vụ khi được chọn */
+nav ul li:hover > ul {
+    display: block;
+}
 .logo{
     margin-left: 10%;
     width: 10%;
     
 }
-
+nav ul li a:focus {
+    color: #4CB050;
+}
 /*banner*/
 .banner {
     position: relative;
@@ -264,3 +272,48 @@ nav  li:hover > ul{
 .email{
     margin-top: 4%;
 }
+#toggle {
+    display: none;
+    background-color:white;
+    color: #fff;
+    padding: 10px;
+    font-size: 10px;
+    cursor: pointer;
+    position: fixed; /* Menu cố định */
+    width:100%;
+    top: 0;
+    z-index: 3  ;
+    
+    
+}
+    @media screen and (max-width: 431px) {
+        ul{
+            display: none;
+        }
+        #toggle {
+            display: block; /* Hiển thị toggle menu */
+        }
+        #main-menu{
+            width: 100%;
+            flex-direction: column;
+            text-align: center;
+        }
+        nav li:hover > ul {
+            display: block;
+        }
+        nav ul>li{
+            border: none;
+            border-bottom: 1px solid #ccc;
+            
+        }
+        .icon{
+            border-bottom: none;
+        }
+        .imgbanner{
+            width: 100%;
+        }
+        .textbanner{
+            display: none;
+        }
+        
+    }
