@@ -4,6 +4,9 @@
     margin: 0;
     padding: 0;
 }
+html,body{
+    overflow-x: hidden;
+}
 nav{
 
     background: #ffffff; 
@@ -295,8 +298,9 @@ nav ul li a:focus {
         ul{
             display: none;
         }
+        
         #toggle {
-            display: block; /* Hiển thị toggle menu */
+            display: block; 
         }
         #main-menu{
             width: 100%;
@@ -309,7 +313,7 @@ nav ul li a:focus {
         nav ul>li{
             border: none;
             border-bottom: 1px solid #ccc;
-            
+            margin-top: 15px;
         }
         .icon{
             border-bottom: none;
@@ -371,5 +375,46 @@ nav ul li a:focus {
             margin-left: 30%;
             margin-top: 7%;
             background-color: #4CB050;
+        }
+        .imgbanner{
+            margin-top: 50px;
+            width: 100%;
+            height: 250px;
+            display: block;
+        }
+
+        .bd1>img{
+            display: none;
+        }
+        .btn1_bd{
+            width: 80%;
+            margin: 10px auto;
+            margin-left: 40px;
+            height: auto;
+            font-size: 30px;
+            text-align: center;
+            border-color: #252525;
+        }
+        .btn2_bd{
+            width: 50%;
+            margin-top: 5%;
+            margin-left: 100px;
+            height: auto;
+            font-size: 27px;
+            text-align: center;
+            background-color: #4CB050;
+        }
+        .textbd>h1{
+            font-size: 100px;
+            text-align: center;
+        }
+        .textbd1>h1{
+            text-align: center;
+            font-size: 30px;
+        }
+        .clbn{
+            margin-top: 10%;
+            background-color: #EFEFEF;
+            height: 600px;
         }
     }
