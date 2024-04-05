@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="index.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 </head>
 <body> 
   <div class="container-fluid" style="margin: 0; padding: 0;">
@@ -42,7 +44,7 @@
     
     <div class="banner">
         <img class="col-lg-12 imgbanner" src="ing/hero_home_04.jpg" alt="" style="width: 130%; padding: 0px;">
-      <div class="textbanner">
+      <div  class="textbanner">
         <h2>Dịch vụ giao hàng <br> an toàn & bảo mật</h2>
         <br>
           <img class="icphone"  src="ing/phone.svg" alt="" style="margin-left: 15%;" >
@@ -75,15 +77,15 @@
               </select>
             </div>
             <div class="col-lg-6 " >
-              <button class="btn2_bd">Tra cứu địa điểm</button>
+              <button  data-aos="zoom-in-left" class="btn2_bd">Tra cứu địa điểm</button>
             </div>
           </div>
             <div class="row" style="margin-top: 5%;">
               <div class="col-lg-4 textbd " style="text-align: right">
-                <h1>1000+</h1>
+                <h1 >1000+</h1>
               </div>
               <div class="col-lg-8 textbd1" style="text-align: center;">
-                <h1> Điểm gửi hàng trên <br> toàn quốc</h1>
+                <h1 > Điểm gửi hàng trên <br> toàn quốc</h1>
               </div>  
             </div>
         </div>
@@ -96,31 +98,26 @@
           <h2>Dịch vụ giao hàng quốc tế dễ dàng</h2>
         </div>
       </div>
-        <div class="col-lg-9" style="margin: 2% auto;">
-          <div class="row">
-            <div class="col-lg-4 imgpage3">
-              <img src="ing/page3_1.svg" alt="" class="hinh"> 
-              <div class="gt">
-                <h4>Dịch vụ tiêu chuẩn</h4>
-                <button class="btn_gt">chi tiết</button>
-              </div>
-            </div>
-            <div class="col-lg-4 imgpage3">
-              <img src="ing/page3_2.svg" alt=""  class="hinh">
-              <div class="gt">
-                <h4>Dịch vụ nhanh</h4>
-                <button class="btn_gt">chi tiết</button>
-              </div>
-            </div>
-            <div class="col-lg-4 imgpage3">
-              <img src="ing/page3_1.svg" alt=""  class="hinh">
-              <div class="gt">
-                <h4>Giao hàng quốc tế</h4>
-                <button class="btn_gt">chi tiết</button>
-              </div>
-            </div>
+      <div class="carousel" data-flickity='{"wrapAround": true}'>
+        <div class="carousel-cell" style="background-image: url(ing/bb1.jpg); border: 1px solid #ccc; box-shadow: 0 0 10px #4CB050">
+          <div class="slider">
+            <h4>Dịch vụ tiêu chuẩn</h4>
+            <button class="btn_gt">chi tiết</button>
           </div>
         </div>
+        <div class="carousel-cell" style="background-image: url(ing/bb2.jpg); border: 1px solid #ccc; box-shadow: 0 0 10px #4CB050">
+          <div class="slider">
+            <h4>Dịch vụ nhanh</h4>
+            <button class="btn_gt">chi tiết</button>
+          </div>
+        </div>
+        <div class="carousel-cell" style="background-image: url(ing/bb3.jpg); border: 1px solid #ccc; box-shadow: 0 0 10px #4CB050">
+          <div class="slider">
+            <h4>Quốc tế</h4>
+            <button class="btn_gt">chi tiết</button>
+          </div>
+        </div>
+    </div>
         <!--       Page 4    -->
         <div>
         <div class="page4">
@@ -139,7 +136,9 @@
               <button class="btn_pg4"><h2>ĐĂNG KÝ NGAY</h2></button>
             </div>
           </div>
-          <div class="col-lg-6">
+          <div data-aos="fade-down"
+               data-aos-easing="linear"
+               data-aos-duration="1500" class="col-lg-6">
             <div class="col-lg-10 thongtin">
               <div class="row">
                 <div class="col-lg-4">
@@ -176,10 +175,26 @@
           </div>
         </div>
       </div>
+
+      <!-- box chattt-->
+      <div class="chat-button" id="chat-button" onclick="toggleChatBox()">
+        <img src="chat-icon.png" alt="Chat Icon">
+    </div>
+    
+    <div class="chat-container" id="chat-container">
+        <div class="chat-box" id="chat-box">
+            <!-- Dữ liệu chat sẽ được hiển thị ở đây -->
+            <div>Bạn muốn biết về sản phẩm nào?</div>
+        <div>Tôi có thể giúp gì cho bạn?</div>
+        </div>
+        <input type="text" id="user-input" placeholder="Nhập tin nhắn...">
+        <button class="boxchatt" onclick="sendMessage()">Gửi</button>
+    </div>
+
         <!-- footer  -->
         <div class="row footer " >
             <div class="col-lg-11 lhvct ">
-                <div class="col-lg-6 lhvct1">
+                <div class="col-lg-6  lhvct1">
                   <h1 >Liên hệ với chúng tôi</h1>
                 </div>
                 <div class="col-lg-6 lhvct2" >
@@ -191,11 +206,11 @@
                 <div class="col-lg-6">
                  <div class="tx_footer">
                     <h1>About Us</h1> <br>
-                    <p>Bất kỳ ai ở bất kỳ đâu, không phân biệt thành phần <br>
-                        hay độ tuổi, thành phố hay nông thôn, phổ thông <br>
-                        hay đại học; chỉ với một chiếc điện thoại thông minh <br> 
-                        ở trên tay có thể tham gia kinh doanh trực tuyến, <br>
-                        tham gia vào nền kinh tế số, để nuôi ước mơ tự <br>
+                    <p>Bất kỳ ai ở bất kỳ đâu, không phân biệt thành phần 
+                        hay độ tuổi, thành phố hay nông thôn, phổ thông 
+                        hay đại học; chỉ với một chiếc điện thoại thông minh 
+                        ở trên tay có thể tham gia kinh doanh trực tuyến, 
+                        tham gia vào nền kinh tế số, để nuôi ước mơ tự 
                         doanh tự lập đổi đời, góp phần thúc đẩy phát triển 
                         kinh tế, xã hội tốt đẹp hơn.</p>
                   </div> 
@@ -219,6 +234,12 @@
             </div>
             
     </div>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    
 </body>
 </html>
 
