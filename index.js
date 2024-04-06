@@ -2,8 +2,43 @@ $(document).ready(function() {
     $('#toggle').click(function() {
         $('nav').slideToggle();
     });
+
 })
 
+$(document).ready(function() {
+    var menuOpen = false;
+    var pageLoaded = false;
+
+    // Ẩn menu khi trang vừa tải lên và kích thước màn hình nhỏ hơn 480px
+    if ($(window).width() < 480) {
+        $('nav').hide();
+    }
+    
+    // Kiểm tra trạng thái ban đầu của menu và ẩn nếu nó đã được mở trước đó
+    if (!$('nav').is(':hidden')) {
+        menuOpen = true;
+    }
+
+    // Kích hoạt sự kiện click sau khi trang đã tải hoàn tất và kích thước màn hình lớn hơn hoặc bằng 480px
+    if ($(window).width() >= 480) {
+        pageLoaded = true;
+        $('#toggle').click(function() {
+            // Đảo ngược trạng thái của biến menuOpen
+            menuOpen = !menuOpen;
+            if (menuOpen) {
+                $('nav').slideDown();
+            } else {
+                $('nav').slideUp();
+            }
+        });
+    }
+    $('nav a').click(function() {
+        if ($(window).width() < 480) {
+            $('nav').slideUp();
+            menuOpen = false;
+        }
+    });
+});
 
 
 
