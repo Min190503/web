@@ -1,5 +1,9 @@
+html,body{
+    overflow-x: hidden;
+}
 .hinhtracuu{
     position: relative;
+    width: 100%; margin-top: 4%;
 }
 .khunglh{
     border-radius: 25px;
@@ -62,4 +66,76 @@
 }
 .space2{
     height: 850px;
+}
+@media screen and (max-width: 480px) {
+
+    .hinhtracuu{
+        position: relative;
+        margin-top: 4%;
+    }
+    .khunglh{
+        width: 95%;
+        border: 1px solid #ccc;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        margin: 0 auto;
+        position: absolute;
+        transform: translate(3%, -1%);
+        z-index: 1;
+    }
+    .bn2{
+        background-color: #4CB050;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    .bn1{
+        background-color: #252525;
+        color: white;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    .text1>h1{
+        font-weight: 800;
+    }
+    .text1>p{
+        font-weight: 100;
+    }
+    .t_input{
+        width: 100%;
+    }
+    .t_input>div>input{
+        height: 50px;
+    }
+    .t_input>div{
+        margin: 10% auto;
+    }
+    .t_input>div>button{
+        background-color: #4CB050;
+        width: 100%;
+        height: 50px;
+        color: white;
+        text-align: center;
+    }
+    .img1{
+        display: none;
+    }
+    .text2>p{
+        font-weight: 900;
+    }
+    .text3{
+        margin-top: 25px;
+    }
+    .text3>h1{
+        font-weight: 800;
+    }
+    .space2{
+        height: 1250px;
+    }
+    .knvct>h1{
+        width: 100%;
+        font-size: 30px;
+    }
 }

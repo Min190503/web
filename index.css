@@ -286,7 +286,7 @@ nav ul li a:focus {
     background-color:white;
     color: #fff;
     padding: 10px;
-    font-size: 10px;
+    font-size: 1px;
     cursor: pointer;
     position: fixed; /* Menu cố định */
     width:100%;
@@ -389,8 +389,10 @@ input[type="text"] {
             display: none;
         }
         
-        #toggle {
+        #toggle{
             display: block; 
+            padding: 0 10px;
+            padding-top:10px ;
         }
         #main-menu{
             width: 100%;

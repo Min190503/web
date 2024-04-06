@@ -169,7 +169,7 @@ html,body{
         display: none;
     }
     .modal {
-        display: none; /* Ẩn modal ban đầu */
+        display: none;
         position: fixed;
         z-index: 1;
         left: 0;
@@ -182,7 +182,7 @@ html,body{
     }
     .modal-content {
         background-color: #fefefe;
-        margin: 15% auto; /* Canh giữa modal */
+        margin: 15% auto;
         padding: 20px;
         border: 1px solid #888;
         width: 90%;
@@ -190,5 +190,9 @@ html,body{
     }
     .btnn{
         display: none;
+    }
+    .chitiet>h1{
+        font-size: 35px;
+        text-align: center;
     }
 }
