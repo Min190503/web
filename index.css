@@ -25,10 +25,13 @@ nav ul{
 }
 
 .icon{
-    margin-top: 1%;
+    margin-top: -5px;
 }
 .icon img{
     padding: 5px;
+}
+.icon>a{
+    padding: 0px;
 }
 nav> ul li{
 
