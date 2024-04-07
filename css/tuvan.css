@@ -49,3 +49,78 @@ h5{
     margin-top: 15px;
     margin-bottom: 15px;
 }
+.kc{
+    height: 1000px;
+}
+@media screen and (max-width: 480px) {
+    .khungtv{
+        border-radius: 0;
+        margin: 10px auto;
+        position: absolute;
+        transform: translate(0%, 0%);
+        z-index: 1;
+        background-color: white;
+        height: auto;
+        border: 0px;
+        box-shadow: none;
+        padding: 0;
+    }
+    .ktv{
+        margin: 0 auto;
+        padding: 0px 16px;
+    }
+    .bb{
+        border-bottom: none;
+    }
+    .bb>h1{
+        text-align: center;
+        padding-top: 24px;
+        padding-bottom: 10px;
+        
+    }
+    .hinhtuvan{
+        margin-top: 9%;
+        width: 100%;
+        position: relative;
+        padding: 0;
+    }
+    .bb1, .bb2{
+        padding: 10px 0 20px 15px ;
+    }
+    .cc{
+        padding-left: 0;
+    }
+    .col-lg-6{
+        margin-bottom: 10px;
+    }
+    .mm{
+        margin-bottom: 10px;
+    }
+    .email{
+        width: 100%;
+    }
+    .col-lg-8{
+        padding-left: 0;
+    }
+    .kk{
+        width: 100%;
+        margin-left: 4px;
+        height: 50px;
+    }
+    .end{
+        padding-left: 15px;
+    }
+    .mail>input{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .dd{
+        text-align: center;
+    }
+    .dd>button{
+        margin-top: 0px;
+    }
+    .kc{
+        height: 1500px;
+    }
+}

@@ -98,14 +98,14 @@ nav ul li a:focus {
     top: 55%;
     left: 70%;
     transform: translate(-50%, -50%);
-    z-index: 1; /* Đảm bảo textbanner hiển thị phía trên imgbanner */
+    z-index: 1;
     color: black;
     text-align: left ; 
     width: 600px;
     height: 500px;
     background-color: white;
-    border: 2px solid #ccc; /* Border mặc định */
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Bóng mờ */
+    border: 2px solid #ccc; 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
 .textbanner>h2{

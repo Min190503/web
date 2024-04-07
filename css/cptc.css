@@ -3,7 +3,7 @@
     width: 100%;
     margin-top: 0;
 }
-.btndk>button{
+.btndk>a>button{
     width: 60%;
     height: 60px;
     background-color: #4CB050;
@@ -12,7 +12,7 @@
     text-align: center;
     margin-top: 5%;
 }
-.btndk>button>h1{
+.btndk>a>button>h1{
     color: white;
 }
 .textcptc{
@@ -74,16 +74,16 @@
         margin-top: 40px;
         position: relative;
     }
-    .btndk>button{
+    .btndk>a>button{
         width: 60%;
         height: 40px;
         background-color: #4CB050;
     }
-    .btndk{
+    .btndk>a{
         text-align: center;
         margin-top: 5%;
     }
-    .btndk>button>h1{
+    .btndk>a>button>h1{
         font-size: 20px;
         color: white;
     }
