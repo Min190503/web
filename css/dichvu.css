@@ -134,3 +134,40 @@
         margin-bottom: 30px;
     }
 }
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .A{
+        display: none;
+    }
+    .banner_dv{
+        margin-top: 40px;
+    }
+    .cptc>h1{
+        color: #4CB050;
+        margin-top: 20%;
+        margin-left:0%;
+    }
+    .cptc>p{
+        padding: 0 30px;
+        margin-left: 0%;
+        color: black;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 700;
+    }
+    .cptc{
+        margin: 0 auto;
+        text-align: center;
+    }
+    .btn1{
+        width: 80%;
+        height: 50px;
+    }
+    .btn2{
+       
+        width: 80%;
+        height: 50px;
+        float: left;  
+    }
+    .footer{
+        margin-top: 50px;
+    }
+}

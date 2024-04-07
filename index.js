@@ -10,7 +10,7 @@ $(document).ready(function() {
     var pageLoaded = false;
 
     // Ẩn menu khi trang vừa tải lên và kích thước màn hình nhỏ hơn 480px
-    if ($(window).width() < 480) {
+    if ($(window).width() < 1024) {
         $('nav').hide();
     }
     
@@ -20,7 +20,7 @@ $(document).ready(function() {
     }
 
     // Kích hoạt sự kiện click sau khi trang đã tải hoàn tất và kích thước màn hình lớn hơn hoặc bằng 480px
-    if ($(window).width() >= 480) {
+    if ($(window).width() >= 1024) {
         pageLoaded = true;
         $('#toggle').click(function() {
             // Đảo ngược trạng thái của biến menuOpen
@@ -33,7 +33,7 @@ $(document).ready(function() {
         });
     }
     $('nav a').click(function() {
-        if ($(window).width() < 480) {
+        if ($(window).width() < 1024) {
             $('nav').slideUp();
             menuOpen = false;
         }

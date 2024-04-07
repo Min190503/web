@@ -124,3 +124,17 @@ h5{
         height: 1500px;
     }
 }
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .dcng>div{
+        padding: 10px;
+    }
+    .end>div>h6{
+        padding: 0;
+    }
+    .end>div{
+        padding-right: 0;
+    }
+    .ktv{
+        padding: 0 10px;
+    }
+}

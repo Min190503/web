@@ -151,3 +151,18 @@
         display: block;
     }
 }
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .textcptc{
+        margin: 0 auto;
+        border: 1px solid #ccc;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        border-radius: 25px;
+        position: absolute;
+        background-color: white;
+        transform: translate(0%, 0%);
+        z-index: 1;
+    }
+    .minh{
+        margin-top: 50%;
+    }
+}

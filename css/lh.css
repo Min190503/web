@@ -139,3 +139,33 @@ html,body{
         font-size: 30px;
     }
 }
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .hinhtracuu{
+        position: relative;
+        width: 100%; margin-top: 4%;
+    }
+    .khunglh{
+        border-radius: 25px;
+        border: 1px solid #ccc;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        margin: 0 auto;
+        position: absolute;
+        transform: translate(0%, 0%);
+        z-index: 1;
+    }
+    .img1{
+        display: none;
+    }
+    .footer{
+        margin-top: 110%;
+    }
+    .bn2{
+        background-color: #4CB050;
+       border-radius: 0px;
+    }
+    .bn1{
+        background-color: #252525;
+        color: white;
+        border-radius: 0px;
+    }
+}
