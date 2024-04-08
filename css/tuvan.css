@@ -136,5 +136,9 @@ h5{
     }
     .ktv{
         padding: 0 10px;
+      
     }
+    .khungtv{
+        transform: translate(12%, -5%);
+    }   
 }
