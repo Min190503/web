@@ -449,6 +449,18 @@
                     </div>
                 </div>  
         </div>
+                    <!-- box chattt-->
+                    <div class="chat-button" id="chat-button" onclick="toggleChatBox()">
+                        <img src="/ing/message-square.svg">
+                    </div>
+            
+                    <div class="chat-container" id="chat-container">
+                        <div class="chat-box" id="chat-box">
+                            <div>Tôi có thể giúp gì cho bạn?</div>
+                        </div>
+                        <input type="text" id="user-input" placeholder="Nhập tin nhắn...">
+                        <button class="boxchatt" onclick="sendMessage()">Gửi</button>
+                    </div>
         <div class="row footer " >
             <div class="col-lg-11 lhvct ">
                 <div class="col-lg-6 lhvct1">
@@ -492,7 +504,9 @@
 </div>
 </div>
 </div>
-
+<div id="backtop">
+    <img src="/ing/arrow-up-circle.svg" alt="">
+  </div>
 
       
 </body>

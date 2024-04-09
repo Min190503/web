@@ -176,14 +176,12 @@
 
       <!-- box chattt-->
       <div class="chat-button" id="chat-button" onclick="toggleChatBox()">
-        <img src="chat-icon.png" alt="Chat Icon">
+        <img src="/ing/message-square.svg">
     </div>
     
     <div class="chat-container" id="chat-container">
         <div class="chat-box" id="chat-box">
-            <!-- Dữ liệu chat sẽ được hiển thị ở đây -->
-            <div>Bạn muốn biết về sản phẩm nào?</div>
-        <div>Tôi có thể giúp gì cho bạn?</div>
+            <div>Tôi có thể giúp gì cho bạn?</div>
         </div>
         <input type="text" id="user-input" placeholder="Nhập tin nhắn...">
         <button class="boxchatt" onclick="sendMessage()">Gửi</button>
@@ -230,8 +228,14 @@
                 </div>
               </div>
             </div>
+           
             
     </div>
+    <!--backtop-->
+    <div id="backtop">
+      <img src="ing/arrow-up-circle.svg" alt="">
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>

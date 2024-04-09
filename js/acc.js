@@ -16,13 +16,13 @@ function signup(event){
 }
 
 function login(event) {
-    event.preventDefault(); // Ngăn chặn hành động mặc định của form
+    event.preventDefault(); 
 
     var username = document.getElementById("username").value;
     var email = document.getElementById("email").value;
     var password = document.getElementById("password").value;
 
-    var user = localStorage.getItem("user"); // Sử dụng key "user" để lấy dữ liệu người dùng từ localStorage
+    var user = localStorage.getItem("user"); 
     var data = JSON.parse(user);
 
     if (username.trim() === '' || password.trim() === '') {
@@ -31,7 +31,7 @@ function login(event) {
         alert("Tài khoản không tồn tại. Vui lòng đăng ký trước.");
     } else if (username === data.username && email === data.email && password === data.password) {
         alert("Đăng nhập thành công!");
-        window.location.href = "/index.html"; // Chuyển hướng đến trang index.html sau khi đăng nhập thành công
+        window.location.href = "/index.html"; 
     } else {
         alert("Tên người dùng hoặc mật khẩu không chính xác!");
     }
