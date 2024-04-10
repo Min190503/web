@@ -11,12 +11,12 @@ html,body{
 nav{
     display: block;
     background: #ffffff; 
-    position: fixed; /* Menu cố định */
+    position: fixed; 
     width: 100%;
-    top: 0; /* Đặt menu ở phía trên cùng */
+    top: 0; 
     z-index: 2;
     border: 1px solid #ccc;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Bóng mờ */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); 
 }
 nav ul{
     margin-right: 1%;
@@ -48,6 +48,9 @@ nav> ul li a{
 
 nav ul li:hover>a{
     opacity: .7;
+    color: #4CB050;
+}
+nav ul li:focus>a{
     color: #4CB050;
 }
 
@@ -197,6 +200,9 @@ nav ul li a:focus {
     border: 1px solid #ccc;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Bóng mờ */
 }
+.btn_gt:hover{
+    border: 2px solid yellow; 
+}
 
 /*                   page4             */
 .hd_page4{
@@ -268,6 +274,13 @@ nav ul li a:focus {
     height: 50px;
     font-weight: 800;
 }
+.bt_lh:hover,
+.btn_pg4:hover,
+.lhvct2>button:hover{
+    border: 2px solid yellow; 
+    box-shadow: 0 0 100px yellow;
+}
+
 .tx_footer{
     color: white;
     margin-left: 10%;

@@ -93,7 +93,7 @@ html,body{
 }
 .cvh:hover {
     border-color: #4CB050;
-    box-shadow: 0 0 5px #4CB050;
+    box-shadow: 0 0 30px #4CB050;
 }
 
 .modal {

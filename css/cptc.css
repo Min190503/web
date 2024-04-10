@@ -15,6 +15,10 @@
 .btndk>a>button>h1{
     color: white;
 }
+.btndk>a>button:hover{
+    border: 2px solid yellow; 
+    box-shadow: 0 0 100px yellow;
+}
 .textcptc{
     margin: 0 auto;
     border: 1px solid #ccc;
@@ -31,7 +35,6 @@
     font-weight: 700;
 }
 .textt>p{
-    olor: #4CB050;
     font-family:Arial, Helvetica, sans-serif;
     font-weight: 600;
 }
@@ -54,6 +57,10 @@
     color: white;
     width: 40%;
     border-radius: 25px;
+}
+.btnbg>a>button:hover{
+    border: 2px solid #4CB050; 
+    box-shadow: 0 0 100px yellow;
 }
 .textgt1>div>h2,
 .textgt>div>h2{
